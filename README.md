@@ -111,7 +111,9 @@ The other options behave in the same way as for the `deploy` command.
 
 You may also connect to ant EVM-compatible network by setting the `TAR_JSON_RPC_URL` environment variable and using the `custom` network id during deployment.
 
-## <img src="./assets/images/ngi-trustchain.png" height="40" alt="NGI TrustChain">
+## NGI TrustChain
+
+<img src="./assets/images/ngi-trustchain.png" height="40" alt="NGI TrustChain">
 
 Funded by the European Union. Views and opinions expressed are those of the author(s) only and don’t necessarily reflect
 those of the European Union or European Commission. Neither the European Union nor the granting authority can be held
