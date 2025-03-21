@@ -101,6 +101,22 @@ This command will canonicalize the provided payload in accordance with [RFC8785]
 
 The other options behave in the same way as for the `deploy` command.
 
+#### Replace an existing DCAP Token
+
+To replace a DCAP Token by defining its successor, run:
+
+```shell
+npx hardhat [GLOBAL OPTIONS] replace <predecessor> <successor> [--force]
+```
+
+- `predecessor` (required): A valid token id of the predecessor DCAP token (the token that will be replaced).
+- `successor` (required): A valid token id of the successor DCAP token.
+- `--force` (optional): Force update the predecessor token without verifying if the successor token points to it.
+
+Important: you must manually switch to the network of the `predecessor` contract using Hardhat's `--network` options.
+
+Note: this command supports replacing tokens accross different blockchain networks. To interact with third-party blockchain, use the `custom` network (see configuration below).
+
 #### Pre-configured Public Networks
 
 | Id                  | Network           | Type           | JSON-RPC                                    |
