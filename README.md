@@ -147,11 +147,11 @@ This class created to be semantically equivalent to `edm:ProvidedCHO`.
 
 You can find example payloads for DCAP Tokens in the [examples/](examples/) directory:
 
-- [bauhaus.json](./examples/bauhaus.json): "Bauhaus", _Fashion Museum of Antwerp, Belgium_, <https://www.europeana.eu/en/item/2048208/europeana_fashion_OBJ7581>.
-- [figure-art-nouveau.json](./examples/figure-art-nouveau.json): "Γυναικεία φιγούρα art nouveau.", _Hellenic Literary and Historical Archive - Cultural Foundation of the National Bank Of Greece, Greece_, <https://www.europeana.eu/en/item/122/https___www_searchculture_gr_aggregator_edm_ELIA_000100_25_500942>.
-- [mycenaean-askos.json](./examples/mycenaean-askos.json): "Μυκηναϊκός ασκός από τα Πευκάκια.", _Archaeological Receipts and Expropriations Fund, Greece_, <https://www.europeana.eu/en/item/2064902/https___www_searchculture_gr_aggregator_edm_TAPA_000054_11631_13460>.
-- [statue-de-couple.json](./examples/statue-de-couple.json): "Statue de couple", _National Library of France, France_, <https://www.europeana.eu/en/item/9200521/ark__12148_btv1b55009694k>.
-- [vase.json](./examples/vase.json): "Vase", _Museum of Arts and Crafts, Hamburg_, <https://www.europeana.eu/en/item/2048429/item_TYMYWZX3PDMBSBQUNWPYVFB3TIUQZF4I>.
+- [bauhaus.json](./examples/bauhaus.json): "Bauhaus", _Fashion Museum of Antwerp, Belgium_ ([view on Europeana](https://www.europeana.eu/en/item/2048208/europeana_fashion_OBJ7581))
+- [figure-art-nouveau.json](./examples/figure-art-nouveau.json): "Γυναικεία φιγούρα art nouveau.", _Hellenic Literary and Historical Archive - Cultural Foundation of the National Bank Of Greece, Greece_, ([view on Europeana](https://www.europeana.eu/en/item/122/https___www_searchculture_gr_aggregator_edm_ELIA_000100_25_500942))
+- [mycenaean-askos.json](./examples/mycenaean-askos.json): "Μυκηναϊκός ασκός από τα Πευκάκια.", _Archaeological Receipts and Expropriations Fund, Greece_, ([view on Europeana](https://www.europeana.eu/en/item/2064902/https___www_searchculture_gr_aggregator_edm_TAPA_000054_11631_13460))
+- [statue-de-couple.json](./examples/statue-de-couple.json): "Statue de couple", _National Library of France, France_, ([view on Europeana](https://www.europeana.eu/en/item/9200521/ark__12148_btv1b55009694k))
+- [vase.json](./examples/vase.json): "Vase", _Museum of Arts and Crafts, Hamburg_, ([view on Europeana](https://www.europeana.eu/en/item/2048429/item_TYMYWZX3PDMBSBQUNWPYVFB3TIUQZF4I))
 
 The examples were created based Cultural Heritage Object Aggregations available on <europeana.eu>, and as such, are not representative of a valid DCAP Token's payload. In our proposed implementation, the providing institution that manages a Cultural Heritage Object would create a DCAP Token during the process of providing it to the Europeana Aggregator.
 
@@ -165,6 +165,12 @@ npx jsonld-cli canonize examples/statue-de-couple.json
 ```
 
 ## NGI TrustChain
+
+Our solution serves as a market-ready demonstrator that targets real-world experimentation around the use of new tokenisation mechanisms for the protection, exchange, and IPR management of cultural heritage assets.
+
+In order to ensure compatibility and interoperability across the European Union, our solution is  compatible with the standardised framework and data model of Europeana.
+
+By showcasing the innovative technological capabilities and business benefits of blockchain and web3 technologies, we aim to pave the grounds for catalysing broader implementations that could position EU’s creative/culture economy at the forefront of the strategic deeptech vertical of web2-web3 interoperability.
 
 <img src="./assets/images/ngi-trustchain.png" height="40" alt="NGI TrustChain">
 
