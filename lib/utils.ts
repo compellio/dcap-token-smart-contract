@@ -54,7 +54,7 @@ export async function getNetworkProvider(hre: HardhatRuntimeEnvironment, chainId
     const networks = Object.keys(hre.config.networks);
 
     for (const network of networks) {
-        if (await getNetworkChainId(hre, network) === chainId) {
+        if (network !== 'localhost' && await getNetworkChainId(hre, network) === chainId) {
             return {
                 name: network,
                 config: hre.config.networks[network],
