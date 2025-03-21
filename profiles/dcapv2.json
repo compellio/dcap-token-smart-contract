@@ -1,0 +1,79 @@
+{
+	"@context": [
+		"./../asset.json",
+		{
+			"dc": "http://purl.org/dc/elements/1.1/",
+			"dcterms": "http://purl.org/dc/terms/",
+			"edm": "http://www.europeana.eu/schemas/edm/",
+			"dcap": "https://profiles.compellio.com/dcap/2/",
+			"dcap:CulturalHeritageObject": {
+				"@type": "@id",
+				"@context": {
+					"dc:contributor": {
+						"@container": "@set"
+					},
+					"dc:creator": {
+						"@container": "@set"
+					},
+					"dc:date": {
+						"@container": "@set"
+					},
+					"dc:description": {
+						"@container": "@language"
+					},
+					"dc:identifier": {
+						"@container": "@set"
+					},
+					"dc:language": {
+						"@container": "@set"
+					},
+					"dc:publisher": {
+						"@container": "@set"
+					},
+					"dc:source": {
+						"@container": "@set"
+					},
+					"dc:subject": {
+						"@container": "@set"
+					},
+					"dc:title": {
+						"@container": "@language"
+					},
+					"dc:type": {
+						"@container": "@set"
+					},
+					"dcterms:alternative": {
+						"@container": "@language"
+					},
+					"dcterms:created": {
+						"@container": "@set"
+					},
+					"dcterms:isPartOf": {
+						"@container": "@set"
+					},
+					"dcterms:issued": {
+						"@container": "@set",
+						"@type": "@id"
+					},
+					"dcterms:spatial": {
+						"@container": "@set"
+					},
+					"dcterms:temporal": {
+						"@container": "@set"
+					},
+					"edm:isNextInSequence": {
+						"@container": "@set",
+						"@type": "@id"
+					}
+				}
+			}
+		}
+	],
+	"@type": "satp:AssetProfile",
+	"dc:title": {
+		"en": "Digital Cultural Asset Passport v2.0"
+	},
+	"dc:description": {
+		"en": "Vocabulary used by Digital Cultural Asset Passport"
+	}
+}

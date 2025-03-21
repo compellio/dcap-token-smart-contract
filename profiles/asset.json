@@ -1,0 +1,26 @@
+{
+	"@context": {
+		"satp": "https://gateway.satp.ietf.org/",
+		"dc": "http://purl.org/dc/terms/",
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"satp:AssetProfile": {
+			"@context": {
+				"dc:title": {
+					"@container": "@language"
+				},
+				"dc:description": {
+					"@container": "@language"
+				}
+			}
+		}
+	},
+	"@type": "owl:Ontology",
+	"dc:title": {
+		"@value": "SATP Asset Profiles Vocabulary",
+		"@language": "en"
+	},
+	"dc:description": {
+		"@value": "Vocabulary used by Asset Profiles",
+		"@language": "en"
+	}
+}

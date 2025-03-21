@@ -1,0 +1,50 @@
+{
+	"@context": "profiles/dcapv2.json",
+	"@type": [
+		"dcap:CulturalHeritageObject",
+		"edm:ProvidedCHO"
+	],
+	"dc:subject": [
+		{
+			"@id": "http://data.europeana.eu/concept/96",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Art Nouveau"
+			}
+		},
+		{
+			"@id": "http://semantics.gr/authorities/ekt-unesco/2049680",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Arts"
+			}
+		}
+	],
+	"dc:title": {
+		"el": "Γυναικεία φιγούρα art nouveau."
+	},
+	"dc:type": [
+		{
+			"@id": "http://semantics.gr/authorities/ekt-item-types/xaraktiko-ergo",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Engraving"
+			}
+		},
+		{
+			"@id": "http://semantics.gr/authorities/ekt-item-types/taxydromikh-karta",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Postcard"
+			}
+		},
+		{
+			"@id": "http://data.europeana.eu/concept/50",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Postcard"
+			}
+		}
+	],
+	"edm:type": "IMAGE"
+}

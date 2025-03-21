@@ -1,0 +1,49 @@
+{
+	"@context": "profiles/dcapv2.json",
+	"@type": [
+		"dcap:CulturalHeritageObject",
+		"edm:ProvidedCHO"
+	],
+	"dc:date": [
+		"2015"
+	],
+	"dc:language": [
+		"ell"
+	],
+	"dc:subject": [
+		{
+			"@id": "http://data.europeana.eu/concept/79",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "History"
+			}
+		},
+		{
+			"@id": "http://data.europeana.eu/concept/44",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Monument"
+			}
+		},
+		{
+			"@id": "http://data.europeana.eu/concept/25",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Archaeological site"
+			}
+		}
+	],
+	"dc:title": {
+		"el": "Μυκηναϊκός ασκός από τα Πευκάκια."
+	},
+	"dc:type": [
+		{
+			"@id": "http://data.europeana.eu/concept/26",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Archaeological artifact"
+			}
+		}
+	],
+	"edm:type": "IMAGE"
+}

@@ -1,0 +1,46 @@
+{
+	"@context": "profiles/dcapv2.json",
+	"@type": [
+		"dcap:CulturalHeritageObject",
+		"edm:ProvidedCHO"
+	],
+	"dc:description": [
+		{
+			"@language": "fr",
+			"@value": "Appartient à l’ensemble documentaire : MusMMA"
+		},
+		{
+			"@language": "fr",
+			"@value": "Appartient à l’ensemble documentaire : BbLevt0"
+		}
+	],
+	"dc:source": [
+		{
+			"@value": "Bibliothèque nationale de France, département Monnaies, médailles et antiques, inv.53.11",
+			"@language": "fr"
+		},
+		{
+			"@value": "National Library of France, department Coins, medals and antiques, inv.53.11",
+			"@language": "en"
+		}
+	],
+	"dc:subject": [
+		{
+			"@id": "http://www.wikidata.org/entity/Q4406616",
+			"@type": "edm:Concept"
+		}
+	],
+	"dc:title": {
+		"fr": "Statue de couple"
+	},
+	"dc:type": [
+		{
+			"@value": "Physical Object",
+			"@language": "en"
+		}
+	],
+	"dcterms:created": [
+		"-2700 - -2200"
+	],
+	"edm:type": "IMAGE"
+}

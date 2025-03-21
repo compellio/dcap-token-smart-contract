@@ -1,0 +1,41 @@
+{
+	"@context": "profiles/dcapv2.json",
+	"@type": [
+		"dcap:CulturalHeritageObject",
+		"edm:ProvidedCHO"
+	],
+	"dc:creator": [
+		{
+			"@id": "http://data.europeana.eu/agent/166559",
+			"@type": "edm:Agent"
+		}
+	],
+	"dc:date": [
+		"1995"
+	],
+	"dc:description": {
+		"en": "Hat with small, rounded brim and very wide, downward-curving, brim in black pleated fabric; brim lined with beige velvet and brim with red satin"
+	},
+	"dc:identifier": [
+		"B02/34"
+	],
+	"dc:title": {
+		"en": "Bauhaus"
+	},
+	"dc:type": [
+		{
+			"@id": "http://data.europeana.eu/concept/2388",
+			"@type": "edm:Concept"
+		}
+	],
+	"dcterms:created": [
+		"1995"
+	],
+	"dcterms:isPartOf": [
+		{
+			"@value": "Europeana XX: Century of Change",
+			"@language": "en"
+		}
+	],
+	"edm:type": "IMAGE"
+}

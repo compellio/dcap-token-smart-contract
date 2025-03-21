@@ -1,0 +1,52 @@
+{
+	"@context": "profiles/dcapv2.json",
+	"@type": [
+		"dcap:CulturalHeritageObject",
+		"edm:ProvidedCHO"
+	],
+	"dc:creator": [
+		{
+			"@value": "Massier, Clément",
+			"@language": "en"
+		}
+	],
+	"dc:identifier": [
+		"1974.106 (Inventarnummer)"
+	],
+	"dc:subject": [
+		{
+			"@value": "Flower Ornaments",
+			"@language": "en"
+		}
+	],
+	"dc:title": {
+		"en": "Vase"
+	},
+	"dc:type": [
+		{
+			"@value": "Decorative objects",
+			"@language": "en"
+		},
+		{
+			"@id": "http://data.europeana.eu/concept/96",
+			"@type": "edm:Concept",
+			"prefLabel": {
+				"en": "Art Nouveau"
+			}
+		}
+	],
+	"dcterms:created": [
+		"1888"
+	],
+	"dcterms:spatial": [
+		{
+			"@value": "Hamburg (Standort)",
+			"@language": "en"
+		},
+		{
+			"@value": "Vallauris (Golfe Juan (Alpes Maritimes)) (Entwurf)",
+			"@language": "en"
+		}
+	],
+	"edm:type": "IMAGE"
+}
