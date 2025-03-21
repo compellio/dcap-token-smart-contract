@@ -1,5 +1,7 @@
 # DCAP Token Smart Contract
 
+Digital Cultural Asset Passport (DCAP) Token Smart Contract and Europeana Domain Model-compatible Asset Profiles for representing Cultural Heritage Objects.
+
 ## Usage
 
 To install the repository and its dependencies, run:
@@ -10,7 +12,7 @@ nvm install && nvm use
 npm ci
 ```
 
-If you don't have NVM installed (see <https://github.com/nvm-sh/nvm>), make sure you are on Node v20.x to run the
+If you don't have NVM installed (see <https://github.com/nvm-sh/nvm>), make sure you are on Node v22.x to run the
 commands below.
 
 ### Smart Contracts
