@@ -17,10 +17,11 @@
  */
 
 import {task} from "hardhat/config";
-import DCAPTokenModule from "../ignition/modules/DCAPToken";
-import {createCliTable, extractTokenProperties, getNetworkChainId} from "../lib/utils";
+import DCAPTokenModule from "../../ignition/modules/DCAPToken";
+import {createCliTable, extractTokenProperties, getNetworkChainId} from "../../lib/utils";
+import {tokenScope} from "../token";
 
-task("deploy", "Deploy a DCAP Token")
+tokenScope.task("deploy", "Deploy a DCAP Token")
     .addPositionalParam("uriPrefix", "The URI prefix of the DCAP token registry.")
     .addPositionalParam("checksum", "A SHA256 checksum of a canonicalized DCAP payload (hex).")
     .addOptionalParam("predecessor", "The Token Id of a predecessor token (optional - used when replacing existing tokens).")
@@ -105,7 +106,7 @@ task("deploy", "Deploy a DCAP Token")
             console.log();
 
             try {
-                await hre.run('replace', {
+                await hre.run({ scope: 'token', task: 'replace' }, {
                     predecessor: deploymentSummary.predecessorId,
                     successor: deploymentSummary.tokenId,
                     force: true

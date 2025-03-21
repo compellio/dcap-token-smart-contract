@@ -61,7 +61,7 @@ The following variables are only required when verifying the deployed smart cont
 To deploy a new DCAP Token contract, run:
 
 ```shell
-npx hardhat [GLOBAL OPTIONS] deploy <uriPrefix> <checksum> [--predecessor <STRING>] [--replace] [--verify] [--json]
+npx hardhat [GLOBAL OPTIONS] token deploy <uriPrefix> <checksum> [--predecessor <STRING>] [--replace] [--verify] [--json]
 ```
 
 - `checksum` (required): must be a SHA256 (32-byte) hash of the DCAP Token's JSON payload. The JSON payload must be canonicalised in accordance with [RFC8785](https://www.rfc-editor.org/rfc/rfc8785) before hashing.
@@ -91,7 +91,7 @@ This command uses Hardhat Ignition to deploy the smart contract. Read more on Ig
 To deploy a new DCAP Token from a JSON payload, run:
 
 ```shell
-npx hardhat [GLOBAL OPTIONS] deploy:payload <uriPrefix> [path] [--json] [--predecessor <STRING>] [--replace] [--stdin] [--verify]
+npx hardhat [GLOBAL OPTIONS] token deploy:payload <uriPrefix> [path] [--json] [--predecessor <STRING>] [--replace] [--stdin] [--verify]
 ```
 
 - `path` (required without `--stdin`): a path to the DCAP Token's payload.
@@ -106,7 +106,7 @@ The other options behave in the same way as for the `deploy` command.
 To replace a DCAP Token by defining its successor, run:
 
 ```shell
-npx hardhat [GLOBAL OPTIONS] replace <predecessor> <successor> [--force]
+npx hardhat [GLOBAL OPTIONS] token replace <predecessor> <successor> [--force]
 ```
 
 - `predecessor` (required): A valid token id of the predecessor DCAP token (the token that will be replaced).

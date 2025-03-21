@@ -17,9 +17,10 @@
  */
 
 import {task} from "hardhat/config";
-import {createCliTable, extractTokenProperties, getNetworkChainId, getNetworkProvider} from "../lib/utils";
+import {createCliTable, extractTokenProperties, getNetworkChainId, getNetworkProvider} from "../../lib/utils";
+import {tokenScope} from "../token";
 
-task("replace", "Attempt to replace a token with is successor")
+tokenScope.task("replace", "Attempt to replace a token with is successor")
     .addPositionalParam("predecessor", "The Token Id of the predecessor token")
     .addPositionalParam("successor", "The Token Id of the successor token.")
     .addFlag("force", "Skip validations and forge-update the predecessor.")

@@ -24,6 +24,9 @@ import dotenv from "dotenv";
 import "./tasks/deploy";
 import "./tasks/deploy-payload";
 import "./tasks/replace";
+import "./tasks/token/deploy";
+import "./tasks/token/deploy-payload";
+import "./tasks/token/replace";
 
 // Extract selected network from CLI arguments
 const vargs = yargs

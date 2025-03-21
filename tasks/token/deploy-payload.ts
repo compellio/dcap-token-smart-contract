@@ -20,8 +20,9 @@ import {task} from "hardhat/config";
 import canonicalize from "canonicalize";
 import fs from "fs";
 import {createHash} from "node:crypto";
+import {tokenScope} from "../token";
 
-task("deploy:payload", "Deploy a DCAP Token from a JSON payload")
+tokenScope.task("deploy:payload", "Deploy a DCAP Token from a JSON payload")
     .addPositionalParam("uriPrefix", "The URI prefix of the DCAP token registry.")
     .addOptionalPositionalParam("path", "The path to a JSON file including a Cultural Heritage Object instance")
     .addOptionalParam("predecessor", "The Token Id of a predecessor token (optional - used when replacing existing tokens).")
@@ -46,6 +47,6 @@ task("deploy:payload", "Deploy a DCAP Token from a JSON payload")
 
         const checksum = createHash('sha256').update(canonical).digest('hex');
 
-        await hre.run('deploy', { checksum, ...params })
+        await hre.run({ scope: 'token', task: 'deploy' }, { checksum, ...params })
 
     });
